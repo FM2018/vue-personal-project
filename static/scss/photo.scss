@@ -1,0 +1,98 @@
+$rotate: 180deg;
+@mixin pubTransform($rotate) {
+	transform:rotate($rotate);
+	-ms-transform:rotate($rotate); 	/* IE 9 */
+	-moz-transform:rotate($rotate); 	/* Firefox */
+	-webkit-transform:rotate($rotate); /* Safari 和 Chrome */
+	-o-transform:rotate($rotate); /* Opera */
+}
+.page {
+	.container {
+		width: 100VW;
+		height: 100VH;
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+		.column {
+			width: 100VW;
+			height: 28VH;
+			display: flex;
+			position: relative;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			.iconBox {
+				width: 32%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center; 
+				img {
+					width: 50px;
+					height: 50px;
+					vertical-align: top;
+				}
+			}
+			.text {
+				height: 100%;
+				width: 35%;
+				text-align: center;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 24px;
+				font-weight: bold;
+				color: white; 
+			}
+			.gotoPage {
+				position: absolute;
+				right: 0;
+				width: 75px;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center; 
+				img {
+					width: 25px;
+					height: 25px;
+					vertical-align: top;
+				}
+			}
+		}
+		.one {
+		background: #504d46;
+		}
+		.two {
+			background: #dba9a0;
+		}
+		.three {
+			background: #f0e6da; 
+			.text {
+				color: #dba9a0; }
+		}
+		.four {
+			background: #1d1d1d;
+		}
+	}
+	#backBtn {
+		// width: 50px;
+		// height: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		overflow: hidden;
+		// background: #dba9a0;
+		// background: #1d4fd4;
+		// position: absolute;
+		z-index: 100;
+		// bottom: 22%;
+		// left: 16px;
+		$imgWH: 60%;
+		img {
+			width: $imgWH;
+			height: $imgWH;
+			vertical-align: top;
+			@include pubTransform($rotate);
+		}
+	}
+}
