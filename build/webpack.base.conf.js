@@ -64,6 +64,10 @@ module.exports = {
       {
         test:/\.css$/,
         loader:'css-loader!style-loader',
+        include: [
+          /src/,//在src目录下的css需要编译
+          '/node_modules/swiper/dist/css/'//增加swiper目录
+        ]
       },
       {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,

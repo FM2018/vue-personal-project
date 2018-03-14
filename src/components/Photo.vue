@@ -21,7 +21,7 @@
 				</div>
 			</div>
 		</div> 
-		<div id="backBtn" v-drag 
+		<div id="backBtn"
 			 onclick="window.history.go(-1)"
 			 :style="{width:'50px', height:'50px', background:'#1d4fd4', position:'fixed', left:'50px', bottom:'22%'}">
 			<img src="/static/img/icon/back.png"></img>

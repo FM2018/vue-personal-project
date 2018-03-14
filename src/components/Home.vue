@@ -167,10 +167,11 @@ $iconWH: 15VW;
 				.listIcon {
 					width: $iconWH;
 					height: $iconWH;
+					overflow: hidden;
 					img {
 						vertical-align: top;
-						width: 100%;
-						height: 100%;
+						width: 99.9%;
+						height: 99.9%;
 					}
 				}
 				.title {

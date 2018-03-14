@@ -12,11 +12,17 @@ export default {
 </script>
 
 <style>
+@import 'swiper/dist/css/swiper.css'
 * {
   margin: 0;
   padding: 0;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
 #app {
+  position: relative;
   width: 100VW;
   height: 100VH;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

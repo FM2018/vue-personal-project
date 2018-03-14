@@ -27,7 +27,7 @@
 		  <img v-for="(item,index) in images" :key="item.index" :data-id="item.id" :src="item.img" :@click="onImageLoad(item)"></img>
 		</div>
 		<!-- 悬浮按钮 -->
-		<div id="backBtn">
+		<div id="backBtn" onclick="window.history.go(-1)">
 			<img src="../../../static/img/icon/back.png" />
 		</div>
 	</div>
